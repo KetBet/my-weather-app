@@ -10,11 +10,13 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <title>HTML/CSS to JS Ket's challenge</title>
-    <link href="src/styles.css" />
+    <title>My weather app</title>
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
         <div class="row">
           <div class="col-2"><strong>New York🌦️</strong></div>
           <div class="col-2"><strong>London🌥️</strong></div>
@@ -22,9 +24,25 @@
           <div class="col-2"><strong>Toronto🌨️</strong></div>
           <div class="col-2"><strong>Singapor☀️</strong></div>
         </div>
-        <form class="citySearch" id="search-form">
-            <input type="text" placeholder="Type city name here" id="city-input" />
-            <input class="searchButton" type="submit" value="Search" />
+       <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
           </form>
       <h1 id="city">
         Dnipro
@@ -67,9 +85,10 @@
             <div class="col"></br><strong>37°</br>
               21°</strong></div>
         </div>
+        </div>
         <p><a href="https://github.com/KetBet/my-weather-app">Open-source code</a> by Kateryna Betina</p>
-    
-		</div>
+      </div>
+      </div>
 		<script src="src/index.js">
 		</script>
   </body>
